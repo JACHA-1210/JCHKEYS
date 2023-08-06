@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "Nanito";
+    src: url("Nunito-BoldItalic.ttf");
+}
+
+li a{
+    font-family: Nanito;
+}

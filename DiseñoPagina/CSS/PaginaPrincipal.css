@@ -1,0 +1,317 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+/* Cabecera */
+
+
+.header {
+    background-color: black;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* Navegacion */
+
+.NavFix {
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+.header a {
+    color: white;
+    text-decoration: none;
+
+}
+
+
+.container {
+    width: 100%;
+    max-width: 100%;
+
+
+}
+
+
+.logo-nav-container {
+    display: flex;
+
+}
+
+.navegacion ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.navegacion ul li {
+    display: inline-block;
+}
+
+.navegacion ul li a {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.navegacion li ul{
+    display: none;
+position: absolute;
+min-width: 140px; 
+}
+
+.navegacion li a{
+    background-color: #000;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+
+}
+
+.navegacion li:hover > ul{
+    display: block;
+}
+
+.logo {
+    letter-spacing: 5px;
+    font-size: 1.3em;
+    max-width: 165px;
+    width: 165px;
+
+}
+
+.seccionCabecera a {
+
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+    color: white;
+
+}
+
+a:hover,
+a:focus {
+    background-size: 100% 2px;
+}
+
+.sectionNav {
+    background-color: #000;
+    padding-top: 12px;
+    position: relative;
+    z-index: 3;
+    color: white;
+    width: 100%;
+    font-family: 'Nanito';
+
+}
+
+/* Carrucel */
+
+.slider-frame {
+
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 0px auto 0;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slide 16s infinite alternate ease-in-out;
+}
+
+
+.slider-frame li {
+    list-style: none;
+    width: 100%;
+
+}
+
+.slider-frame img {
+    width: 100%;
+
+
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0%;
+    }
+
+    20% {
+        margin-left: 0%;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+.slider-frame img {
+    max-width: 100%; /* ajusta el ancho máximo de la imagen al 100% del ancho de la pantalla */
+    height: auto; /* asegura que la altura se ajuste automáticamente en proporción al ancho */
+  }
+  
+
+/* Iconos */
+.diviconos {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 50%;
+}
+
+.iconos {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end; 
+    margin-left: 30px;
+    margin-top: 0px;
+    color: white;
+    background-color: transparent !important;
+}
+
+.midFlecha {
+    vertical-align: middle;
+}
+
+
+
+
+/* Botón izquierdo*/
+
+.btn-flotante {
+    width: 60px;
+    height: 60px;
+    border-radius: 28px;
+    background-color: #000000;
+    display: inherit;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg);
+    color: #000;
+    box-shadow: rgb(0 0 0 / 50%) 0px 4px 24px;
+}
+
+/* Apartado 1 */
+.APContainer1 {
+
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.apartados {
+
+    text-align: center;
+    margin-top: 0;
+    margin-left: 10%;
+    margin-right: 10%;
+    overflow: hidden;
+}
+
+p{
+    text-align: center;
+}
+
+
+.apartado1 {
+
+    width: 40%;
+    height: 50%;
+    margin: 10 auto;
+    float: left;
+
+}
+
+.apartado1 img {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.imgKeycap {
+    border-radius: 25px;
+}
+
+/* Apartado2 */
+.apartado2 {
+    width: 40%;
+    height: 50%;
+    float: right;
+    margin: 10 auto;
+
+}
+
+.apartado2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.imgKeyboard {
+    border-radius: 25px;
+}
+
+/* Video */
+
+.video {
+    margin-top: 2%;
+    width: 100%;
+    height: auto;
+}
+
+.video1 {
+    border-radius: 25px;
+    width: 100%;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: antiquewhite;
+    padding: 4rem 0;
+    text-align: center;
+    margin-top: 6rem;
+}
+
